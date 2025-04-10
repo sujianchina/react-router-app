@@ -166,7 +166,10 @@ body {
   background-size: 1rem;
   position: relative;
 }
-
+#sidebar > div button[type="submit"] {
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+}
 #sidebar > div form input[type="search"].loading {
   background-image: none;
 }

@@ -76,7 +76,12 @@ export default function SidebarLayout({ loaderData }: Route.ComponentProps) {
             <div aria-hidden hidden={!searching} id="search-spinner" />
           </Form>
           <Form method="post">
-            <button type="submit">新建</button>
+            <button
+              type="submit"
+              className="whitespace-nowrap px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 inline-flex items-center justify-center"
+            >
+              新建
+            </button>
           </Form>
         </div>
         <nav>
