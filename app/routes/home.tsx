@@ -1,13 +1,9 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
-
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
-}
-
-export default function Home() {
-  return <Welcome />;
+export default function home() {
+  return (
+    <p id="index-page">
+      这是一个React Router App的演示。
+      <br />
+      查看 <a href="https://reactrouter.com">文档在 reactrouter.com</a> .
+    </p>
+  );
 }
